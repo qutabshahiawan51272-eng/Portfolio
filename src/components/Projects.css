@@ -10,10 +10,27 @@
   justify-content: space-between;
 }
 
-.project-card h3 {
-  color: var(--accent-color);
+.project-header {
   margin-bottom: 1rem;
+}
+
+.project-header h3 {
+  color: var(--accent-color);
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-label {
+  display: inline-block;
+  background-color: rgba(168, 85, 247, 0.15);
+  color: var(--accent-color);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .project-card p {

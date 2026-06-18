@@ -19,12 +19,37 @@
 }
 
 .initial-title {
-  font-size: 4.5rem;
-  line-height: 1.1;
+  font-size: 3rem; /* Reduced to fit long text on one line */
+  line-height: 1.2;
   margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #fff, var(--text-muted));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 4rem; /* Adjusted for new font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap; /* Keep on one line */
+}
+
+@media (max-width: 768px) {
+  .initial-title {
+    font-size: 1.6rem; /* Smaller for mobile */
+    height: 2.5rem;
+  }
+}
+
+.rotating-text {
+  color: #fff; /* White as requested */
+  display: inline-block;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.rotating-text.fade-in {
+  opacity: 1;
+  transform: translateX(0); /* Final position */
+}
+
+.rotating-text.fade-out {
+  opacity: 0;
+  transform: translateX(-40px); /* Slides in from the left side */
 }
 
 .initial-subtitle {

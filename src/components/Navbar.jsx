@@ -30,7 +30,7 @@ const Navbar = () => {
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" className="btn btn-outline cv-btn">
+        <a href="/Umar_Fayyaz_CV.pdf" target="_blank" download className="btn btn-outline cv-btn">
           <FiDownload /> Download CV
         </a>
       </div>
